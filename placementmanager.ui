@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>placementmanager</class>
+ <widget class="QWidget" name="placementmanager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>527</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(
+    x1:0, y1:0, x2:1, y2:1,
+    stop:0 #141e30,
+    stop:1 #243b55
+);
+color: white;</string>
+  </property>
+  <widget class="QPushButton" name="btnAddPlacement">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>470</y>
+     <width>161</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string>Add Placement</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnDeletePlacement">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>470</y>
+     <width>191</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string>Delete Placement</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRefresh">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>470</y>
+     <width>151</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string>Refresh Table</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtCompany">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>320</y>
+     <width>113</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtRole">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>360</y>
+     <width>113</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtDate">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>410</y>
+     <width>113</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>361</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 32px;
+font-weight: bold;
+color: #00cec9;</string>
+   </property>
+   <property name="text">
+    <string>Placement Manager</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tblPlacements">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>441</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView {
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    color: white;
+    gridline-color: rgba(255,255,255,0.2);
+}
+
+QHeaderView::section {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    padding: 5px;
+    border: none;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>320</y>
+     <width>181</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string>Company Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>360</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string> Role</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>410</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string>Deadline</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>510</y>
+     <width>90</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

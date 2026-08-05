@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>resultwindow</class>
+ <widget class="QWidget" name="resultwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>627</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(
+    x1:0, y1:0, x2:1, y2:1,
+    stop:0 #141e30,
+    stop:1 #243b55
+);
+color: white;</string>
+  </property>
+  <widget class="QLabel" name="lblTitle">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>321</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size: 35px;
+font-weight: bold;
+color: #00cec9;</string>
+   </property>
+   <property name="text">
+    <string>Result Manager</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblStudent">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>90</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit, QComboBox {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Student</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboStudent">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>90</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit, QComboBox {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblSubject">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>150</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit, QComboBox {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Subject</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtMarks">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>200</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit, QComboBox {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtGrade">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>250</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit, QComboBox {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblMarks">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>200</y>
+     <width>63</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit, QComboBox {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Marks</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblGrade">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>250</y>
+     <width>71</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit, QComboBox {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}</string>
+   </property>
+   <property name="text">
+    <string>Grade</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRefresh">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>300</y>
+     <width>121</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSaveResult">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>300</y>
+     <width>141</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string>Save Result</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableResults">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>360</y>
+     <width>441</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView {
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    color: white;
+    gridline-color: rgba(255,255,255,0.2);
+}
+
+QHeaderView::section {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    padding: 5px;
+    border: none;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBack">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>300</y>
+     <width>101</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Swis721 LtEx BT</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboSubject">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>150</y>
+     <width>171</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit, QComboBox {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>OOPS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>DAA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>System</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Software</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

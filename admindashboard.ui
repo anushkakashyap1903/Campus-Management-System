@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>admindashboard</class>
+ <widget class="QMainWindow" name="admindashboard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1032</width>
+    <height>737</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(
+    x1:0, y1:0, x2:1, y2:1,
+    stop:0 #141e30,
+    stop:1 #243b55
+);
+color: white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>-40</y>
+      <width>1000</width>
+      <height>700</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1000</width>
+      <height>700</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <widget class="QLabel" name="labelTitle">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>30</y>
+       <width>481</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Swis721 LtEx BT</family>
+       <pointsize>-1</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 35px;
+font-weight: bold;
+color: #00cec9;
+letter-spacing: 1px;</string>
+     </property>
+     <property name="text">
+      <string>Admin Dashboard</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>160</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: white;
+    font-size: px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Students Count</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblStudents">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>160</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: white;
+    font-size: px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>220</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: white;
+    font-size: px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Teachers Count</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTeachers">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>220</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: white;
+    font-size: px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>290</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: white;
+    font-size: px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Complaints Count</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblComplaints">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>290</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: white;
+    font-size: px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblPlacements">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>350</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: white;
+    font-size: px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>350</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: white;
+    font-size: px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Placement Count</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnTeachers">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>430</y>
+       <width>198</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Swis721 LtEx BT</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Manage Teachers</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnStudents">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>430</y>
+       <width>195</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Swis721 LtEx BT</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Manage Students</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnComplaints">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>520</y>
+       <width>201</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Swis721 LtEx BT</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+     </property>
+     <property name="text">
+      <string>View Complaints</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnNotice">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>520</y>
+       <width>211</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Swis721 LtEx BT</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Post Notice</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnMess">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>520</y>
+       <width>204</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Swis721 LtEx BT</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Hostel Mess Menu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnPlacement">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>440</y>
+       <width>216</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Swis721 LtEx BT</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Placement Updates</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnRefresh">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>580</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Swis721 LtEx BT</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Refresh</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnLogout">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>580</y>
+       <width>84</width>
+       <height>36</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Swis721 LtEx BT</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    background-color: rgba(0, 184, 148, 0.7);
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+QPushButton:hover {
+    background-color: rgba(0, 184, 148, 1);
+}</string>
+     </property>
+     <property name="text">
+      <string>Logout</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1032</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
